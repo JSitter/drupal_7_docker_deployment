@@ -1,8 +1,6 @@
 FROM php:apache
-COPY . /var/www/html/
+RUN apt-get update -y && apt-get install -y libpng-dev
+RUN docker-php-ext-install gd
+COPY ./drupal7/ /var/www/html/
 WORKDIR /var/www/html/
-RUN sudo apt-get install curl
-RUN mkdir temp
-RUN cd temp
-RUN curl https://www.drupal.org/download-latest/tar.gz
 EXPOSE 80
