@@ -5,6 +5,7 @@ If you wish to alter this project to use your own environment variables please d
 
 ## Setup
 In order to run this project docker must be installed on the host machine.
+Clone this repo and `cd` into the project directory.
 
 Run:
 
@@ -28,4 +29,4 @@ Start you drupal installation this way.
 
 1. Profit!!!!
 
-The `sites` folder is mounted in the docker container as a volume, so any changed can be made without rebuilding the image.
+The `sites` folder is mounted in the docker container as a volume, so any changes can be seen without rebuilding the image.
