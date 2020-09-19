@@ -1,7 +1,9 @@
-# Drupal 7.72 Docker Development Package
+# Drupal 7.73 Docker Development Package
 This project serves as a way to test modules and themes on a development server without having to setup the traditional LAMP stack. This does not provide a secure platform from which to deploy as the database credentials are commited into this public repo.
 
 If you wish to alter this project to use your own environment variables please do so.
+
+In order to run multiple Drupal projects one one machine simply rename the project directory from drupal_7_dockerized to the name of the project you're working on. Simply putting the project in another folder will not create a fresh Docker project.
 
 ## Setup
 In order to run this project docker must be installed on the host machine.
