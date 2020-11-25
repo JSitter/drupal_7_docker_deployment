@@ -1,24 +1,22 @@
 version: "3.6"
 services:
-  mysql:
+  d7mysql:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: secret_passs
-      MYSQL_DATABASE: app_db
-      MYSQL_USER: php_web
-      MYSQL_HOST: localhost
-      MYSQL_PASSWORD: devp@ss
+      MYSQL_DATABASE: d7app
+      MYSQL_USER: web
+      MYSQL_PASSWORD: pass
     expose:
         - "3306"
     volumes:
-    - mysql:/var/lib/mysql
+    - d7mysql:/var/lib/mysql
   
   web:
-    build: ./drupal-src
+    build: .
     ports:
      - 8086:80
     volumes:
     - ./sites:/app/sites/
 
 volumes:
-  mysql:
+  d7mysql:
