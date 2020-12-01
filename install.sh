@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 if [ -x "$(command -v docker)" ]; then
-    ./package_files/unpacker.py -i ../drupal-src
+    ./package_files/unpacker.py -d -i ./drupal-src
     cp ./drupal-src/sites/default/default.settings.php ./drupal-src/sites/default/settings.php
     chmod 755 ./drupal-src/sites/default/settings.php
     mv ./drupal-src/sites ./sites
