@@ -1,5 +1,4 @@
 #! /usr/bin/env python3
-
 '''
     Drupal 7 CLI Updater
     Copyright 2020 by Justin Sitter
