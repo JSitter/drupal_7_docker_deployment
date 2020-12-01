@@ -1,3 +1,5 @@
 .DS_Store
 db
 sites
+package_files/.tempdir
+drupal-src
